@@ -5,9 +5,11 @@
 {{- $cssOpts   := cond (.Site.IsServer) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") -}}
 
 {{- $css  := resources.Get $sass | resources.ExecuteAsTemplate $scss . | toCSS $cssOpts -}}
-{{- $css1 := resources.Get "css/darkmode.css" -}}
-{{- $css2 := resources.Get "css/cover.css" -}}
-{{- $css3 := resources.Get "css/custom.css" -}}
+{{- $css1 := resources.Get "css/bootstrap.min.css" -}}
+{{- $css2 := resources.Get "css/darkmode.css" -}}
+{{- $css3 := resources.Get "css/syntax.css" -}}
+{{- $css4 := resources.Get "css/cover.css" -}}
+{{- $css5 := resources.Get "css/custom.css" -}}
 
 {{- if .Site.Params.cssMinify -}}
 
@@ -15,6 +17,8 @@
 {{- $css1 = $css1 | resources.Minify -}}
 {{- $css2 = $css2 | resources.Minify -}}
 {{- $css3 = $css3 | resources.Minify -}}
+{{- $css4 = $css3 | resources.Minify -}}
+{{- $css5 = $css3 | resources.Minify -}}
 
 {{- end -}}
 
@@ -24,6 +28,8 @@
 {{- $css1 = $css1 | resources.Fingerprint -}}
 {{- $css2 = $css2 | resources.Fingerprint -}}
 {{- $css3 = $css3 | resources.Fingerprint -}}
+{{- $css4 = $css3 | resources.Fingerprint -}}
+{{- $css5 = $css3 | resources.Fingerprint -}}
 
 {{- end -}}
 
@@ -33,6 +39,8 @@
 <link rel="stylesheet" type="text/css" href="{{- $css1.Permalink | relURL -}}" integrity="{{- $css1.Data.Integrity -}}">
 <link rel="stylesheet" type="text/css" href="{{- $css2.Permalink | relURL -}}" integrity="{{- $css2.Data.Integrity -}}">
 <link rel="stylesheet" type="text/css" href="{{- $css3.Permalink | relURL -}}" integrity="{{- $css3.Data.Integrity -}}">
+<link rel="stylesheet" type="text/css" href="{{- $css4.Permalink | relURL -}}" integrity="{{- $css4.Data.Integrity -}}">
+<link rel="stylesheet" type="text/css" href="{{- $css5.Permalink | relURL -}}" integrity="{{- $css5.Data.Integrity -}}">
 
 {{- else -}}
 
@@ -40,4 +48,6 @@
 <link rel="stylesheet" type="text/css" href="{{- $css1.Permalink | relURL -}}">
 <link rel="stylesheet" type="text/css" href="{{- $css2.Permalink | relURL -}}">
 <link rel="stylesheet" type="text/css" href="{{- $css3.Permalink | relURL -}}">
+<link rel="stylesheet" type="text/css" href="{{- $css4.Permalink | relURL -}}">
+<link rel="stylesheet" type="text/css" href="{{- $css5.Permalink | relURL -}}">
 {{- end -}}
