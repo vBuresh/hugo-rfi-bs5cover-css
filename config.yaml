@@ -53,10 +53,10 @@ params:
   darkMode:             true
   # darkMode:           false
 
-  cssMinify:            false
-  cssIntegrity:         false
-  jsMinify:             false
-  jsIntegrity:          false
+  cssMinify:            true
+  cssIntegrity:         true
+  jsMinify:             true
+  jsIntegrity:          true
 
   # option to specify the main colour of the theme
 
@@ -97,6 +97,6 @@ languages:
 
     params:
       homepage:
-        title:          Золотая оправа вашего сайта
-        subtitle:       одностраничный шаблон для создания простой и красивой главной страницы.
+        title:          Золотая оправа для сайта
+        subtitle:       одностраничный шаблон простой и красивой главной страницы.
         summary: Загрузите, отредактируйте текст и добавьте свою собственную полноэкранную фоновую фотографию, чтобы сделать ее своей собственной.
