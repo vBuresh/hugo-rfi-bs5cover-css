@@ -23,7 +23,7 @@ tags: ['bootstrap', 'themes', 'ночной режим']
 
 Перлы в тему:
 
-- [3 безумно простых способа](переключить сайт в темный режим)
+- [3 безумно простых способа переключить сайт в темный режим](https://webformyself.com/3-bezumno-prostyx-sposoba-pereklyuchit-sajt-v-temnyj-rezhim/)
 - [Ночной режим](https://webformyself.com/nochnoj-rezhim-dlya-vashego-sajta-chast-1/)
 
 # Dark Mode Switch (ночной переключатель)
