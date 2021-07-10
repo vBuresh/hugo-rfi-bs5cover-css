@@ -6,9 +6,9 @@
 
 {{- $css  := resources.Get $sass | resources.ExecuteAsTemplate $scss . | toCSS $cssOpts -}}
 {{- $css1 := resources.Get "css/bootstrap.css" -}}
-{{- $css2 := resources.Get "css/dark-mode.css" -}}
-{{- $css3 := resources.Get "css/syntax.css" -}}
-{{- $css4 := resources.Get "css/cover.css" -}}
+{{- $css2 := resources.Get "css/cover.css" -}}
+{{- $css3 := resources.Get "css/dark-mode.css" -}}
+{{- $css4 := resources.Get "css/syntax.css" -}}
 {{- $css5 := resources.Get "css/custom.css" -}}
 
 {{- if .Site.Params.cssMinify -}}
