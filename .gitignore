@@ -8,11 +8,7 @@
 # Folders and files to ignore
 node_modules/*
 
-assets/bootstrap/scss*
-assets/js/bootstrap.bundle.min.js
-assets/js/darkmode.js
-assets/css/cover.css
-assets/css/dark.css
+assets/bootstrap/
 
 # assets/scss-rfi/_bs-example.scss
 # assets/scss-rfi/core.scss
@@ -30,7 +26,7 @@ assets/scss-rfi/_syntax-monokai.scss
 # assets/scss-rfi/_syntax-monokailight.scss
 # assets/scss-rfi/_variables.scss
 
-content/about/law
+content/
 # исключаются только b6_ и.или s8_
 #!не распространяется на b6- и s8-
 b6_*
