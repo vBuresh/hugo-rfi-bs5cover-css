@@ -13,6 +13,19 @@
   </head>
 
   <body class="d-flex h-100 text-center">
+  {{ if .Site.Params.darkMode -}}
+    <script>
+        function initDarkModeTheme() {
+          var darkThemeSelected =
+            localStorage.getItem("darkSwitch") !== null &&
+            localStorage.getItem("darkSwitch") === "dark";
+          darkThemeSelected
+            ? document.body.setAttribute("data-theme", "dark")
+            : document.body.removeAttribute("data-theme");
+        }
+      </script>
+    <script>initDarkModeTheme();</script>
+   {{- end }}
     {{- partial "sidebar-btn-inset.html" . -}}
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       {{- partial "navbar.html" . -}}
