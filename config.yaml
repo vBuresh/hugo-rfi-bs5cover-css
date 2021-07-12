@@ -43,7 +43,7 @@ params:
 # for meta
   summary: Very nice template
   authors:              "@mdo, wBuresh, Eric Fandor"
-  site_version:         20210621rfi
+  site_version:         a3.0
   # option to specify the favicon image of the site
   # the path is relative to the folder "assetDir" of this configuration
   favicon:              "/images/favicon.svg"
